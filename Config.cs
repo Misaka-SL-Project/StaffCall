@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Exiled.API.Interfaces;
 
-namespace TestingPlugin
+namespace StaffCall
 {
     public class Config : IConfig
     {
