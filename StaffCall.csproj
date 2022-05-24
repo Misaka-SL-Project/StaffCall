@@ -7,8 +7,8 @@
     <ProjectGuid>{B3E18056-A283-4430-96CE-696D878C7BAC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestingPlugin</RootNamespace>
-    <AssemblyName>TestingPlugin</AssemblyName>
+    <RootNamespace>StaffCall</RootNamespace>
+    <AssemblyName>StaffCall</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
