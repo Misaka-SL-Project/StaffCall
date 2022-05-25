@@ -9,7 +9,7 @@ using Exiled.API.Features;
 
 namespace StaffCall
 {
-    [CommandHandler(typeof(RemoteAdminCommandHandler))]
+    [CommandHandler(typeof(ClientCommandHandler))]
     public class StaffCall : ICommand
     {
         public string Command { get; } = "call";
