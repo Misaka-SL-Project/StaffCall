@@ -24,8 +24,8 @@ namespace StaffCall
                 if (ply.RemoteAdminAccess)
                 {
                     ply.Broadcast(5, $"{player.Nickname} asking help:{string.Join(" ", arguments)}", Broadcast.BroadcastFlags.Normal);
+                    adminPresent = true;
                 }
-                adminPresent = true;
             }
             response = adminPresent ? "Admins received your message.": "No Admin present ingame";
             return true;
