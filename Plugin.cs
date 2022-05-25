@@ -9,18 +9,22 @@ namespace StaffCall
 {
     public class Plugin : Plugin<Config>
     {
-    public override string Author { get; } = "Killla";
-	public override string Name { get; } = "Staff Call";
-	public override string Prefix { get; } = "SC";
-	public override Version Version { get; } = new Version(1, 0, 0);
-	public override Version RequiredExiledVersion { get; } = new Version(5, 0, 0);
+        public override string Author { get; } = "Killla";
+	    public override string Name { get; } = "Staff Call";
+	    public override string Prefix { get; } = "SC";
+	    public override Version Version { get; } = new Version(1, 0, 0);
+	    public override Version RequiredExiledVersion { get; } = new Version(5, 0, 0);
+
+        public static Plugin Singleton;
 
         public override void OnEnabled()
         {
+            Singleton = this;
             base.OnEnabled();
         }
         public override void OnDisabled()
         {
+            Singleton = null;
             base.OnDisabled();
         }
     }

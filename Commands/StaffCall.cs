@@ -27,7 +27,7 @@ namespace StaffCall
                     adminPresent = true;
                 }
             }
-            response = adminPresent ? "Admins received your message.": "No Admin present ingame";
+            response = adminPresent ? $"{Plugin.Singleton.Config.AdminReceivedMessage}": $"{Plugin.Singleton.Config.AdminNotPresent}";
             return true;
         }
     }
